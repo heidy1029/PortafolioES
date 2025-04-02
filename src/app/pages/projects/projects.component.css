@@ -1,0 +1,117 @@
+/* Estilos generales */
+.projects {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: RGB(4, 4, 12);
+  color: #fff;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de proyectos */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Tarjetas de proyecto */
+.project-screen {
+  position: relative;
+  width: 250px;
+  height: 300px;
+  background: linear-gradient(45deg, #ff5757, #8a2be2);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-screen:hover {
+  transform: scale(1.05);
+}
+
+/* Imagen del proyecto */
+.project-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.project-screen:hover img {
+  opacity: 1;
+}
+
+/* Efecto glitch en el texto */
+.glitch {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.glitch-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+}
+
+/* Sección de proyecto seleccionado */
+.selecion {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.selecion h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.selecion img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.selecion p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+ /* Alinea el texto a la izquierda */
+}
+
+
+
+.selecion a {
+    margin-top: -60px; /* Ajusta la posición para que suba más */
+    padding: 12px 24px; /* Aumenta el tamaño del botón */
+    background: linear-gradient(45deg, #ff5757, #8a2be2);
+    color: white;
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    font-weight: bold;
+    border-radius: 10px;
+    position: relative;
+    z-index: 10;
+    white-space: nowrap;
+    border: 2px dashed white;
+    text-transform: uppercase; 
+    text-decoration: none;
+    
+  }
+
+.selecion a:hover {
+  background: #000;
+}
